@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* White background */
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logo {
+  width: 100px; /* Adjust the width as needed */
+}
+
+.logo-img {
+  max-width: 100%; /* Ensure the logo scales responsively */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+  flex: 1; /* Distribute available space evenly among links */
+  display: flex;
+  justify-content: space-evenly; /* Evenly distribute items along the main axis */
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0f35a3; /* Text color */
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #a30f1a; /* Underline color */
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+
+.nav-links a:hover {
+  color: #a30f1a; /* Hover effect color */
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Animate underline */
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #0f35a3; /* Border color */
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+  border-color: #a30f1a; /* Focus effect border color */
+  outline: none;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-link {
+  text-decoration: none;
+  color: #0f35a3; /* Text color */
+  transition: color 0.3s ease-in-out;
+}
+
+.profile-link:hover {
+  color: #a30f1a; /* Hover effect color */
+}
+
+.logout-button {
+  background-color: #a30f1a; /* Button color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #8c0e16; /* Hover effect color */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}

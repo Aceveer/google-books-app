@@ -1,0 +1,75 @@
+/* src/styles/carousel.css */
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8f8f8;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+h2 {
+  color: #1a1a1a;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.book-carousel {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.carousel .slide img {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.carousel-root {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .legend {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 8px; /* Adjust padding to make the legend smaller */
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%; /* Limit the maximum width to 80% of the parent container */
+  margin: 0 auto; /* Center the legend horizontally */
+}
+
+.carousel .legend h3 {
+  margin: 0;
+  font-size: 1rem; /* Adjust font size of the title */
+}
+
+.carousel .legend p {
+  margin: 5px 0;
+  font-size: 0.8rem; /* Adjust font size of the author and year */
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #a30f1a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d41b2a;
+}
